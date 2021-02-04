@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    width: min(90vw, 800px);
+    width: min(87vw, 800px);
     margin: auto;
 }
 
@@ -75,6 +75,31 @@ header {
     background: #49AA26;
     color: white;
 }
+/* Table ==================================== */
+#data-table {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+}
+
+table th {
+    background: white;
+
+    font-weight: normal;
+    padding: 1rem 2rem;
+
+    text-align: left;
+    color: #969cb3;
+}
+
+table td {
+    background: white;
+}
+
+table thead tr th: first-child,
+table tbody tr th: first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
 
 /* Footer ==================================== */
 footer {
