@@ -8,3 +8,13 @@ body {
     background: #f0f2f5;
     font-family: 'Poppins', sans-serif;
 }
+
+header {
+    background: #2D4A22;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#logo {
+    color: #fff;
+}
