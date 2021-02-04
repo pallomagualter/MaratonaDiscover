@@ -11,9 +11,17 @@ body {
 }
 
 .container {
-    width: 300px;
-
+    width: min(80vw, 800px);
     margin: auto;
+}
+
+/* Balances ==================================== */
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: #363f5f;
+
+    font-weight: normal;
 }
 
 /* Header ==================================== */
@@ -28,8 +36,15 @@ header {
     font-weight: 100;
 }
 
-/* Balence ==================================== */
+/* Balances ==================================== */
+#balance {
+    margin-top: -8rem;
+}
 
+#balance h2 {
+    color: white;
+    margin-top: 0;
+}
 
 /* Footer ==================================== */
 footer {
