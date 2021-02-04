@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+/* Global ==================================== */
 body {
     background: #f0f2f5;
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    width: 300px;
+
+    margin: auto;
+}
+
+/* Header ==================================== */
 header {
     background: #2D4A22;
     padding: 2rem 0 10rem;
@@ -18,4 +26,12 @@ header {
 #logo {
     color: #fff;
     font-weight: 100;
+}
+
+/* Balence ==================================== */
+
+
+/* Footer ==================================== */
+footer {
+    text-align: center;
 }
