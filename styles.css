@@ -1,3 +1,7 @@
+:root{
+    --dark-blue: #363f5f;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,15 +15,15 @@ body {
 }
 
 .container {
-    width: min(80vw, 800px);
+    width: min(90vw, 800px);
     margin: auto;
 }
 
-/* Balances ==================================== */
+/* Titles ==================================== */
 h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
-    color: #363f5f;
+    color: var(--dark-blue);
 
     font-weight: normal;
 }
@@ -36,7 +40,7 @@ header {
     font-weight: 100;
 }
 
-/* Balances ==================================== */
+/* Balance ==================================== */
 #balance {
     margin-top: -8rem;
 }
@@ -44,6 +48,15 @@ header {
 #balance h2 {
     color: white;
     margin-top: 0;
+}
+/* Cards ==================================== */
+.card {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+
+    color: var(--dark-blue);
 }
 
 /* Footer ==================================== */
