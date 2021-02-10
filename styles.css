@@ -112,8 +112,13 @@ header {
     color: white;
 }
 /* Table ==================================== */
-#data-table {
+#transaction {
     display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
     color: #969cb3;
