@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 93,75%; /* 15px */
+}
+
 /* Global ==================================== */
 body {
     background: #f0f2f5;
