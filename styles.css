@@ -40,6 +40,22 @@ h2 {
     font-weight: normal;
 }
 
+/* Links e Buttons =========================== */
+
+a {
+    color: #49aa26;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3dd705;
+}
+
+.button.new {
+    display: inline-block;
+    margin-bottom: .8rem;
+}
+
 /* Header ==================================== */
 header {
     background: #2D4A22;
