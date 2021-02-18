@@ -198,6 +198,21 @@ td.expense {
     background: #f0f2f5;
     padding: 2.4rem;
 }
+
+/* Form ====================================== */
+#form {
+    max-width: 500px;
+}
+
+#form h2 {
+    margin-top: 0;
+}
+
+input {
+    border: none;
+    border-radius: 0.2rem;
+}
+
 /* Footer ==================================== */
 footer {
     text-align: center;
