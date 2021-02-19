@@ -221,6 +221,10 @@ input {
     margin-top: 0.8rem;
 }
 
+.input-group small {
+    opacity: 0.4;
+}
+
 /* Footer ==================================== */
 footer {
     text-align: center;
