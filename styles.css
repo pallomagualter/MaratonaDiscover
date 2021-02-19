@@ -1,5 +1,6 @@
 :root{
     --dark-blue: #363f5f;
+    --green: #49aa26;
 }
 
 * {
@@ -47,7 +48,7 @@ h2 {
 /* Links e Buttons =========================== */
 
 a {
-    color: #49aa26;
+    color: var(--green);
     text-decoration: none;
 }
 
@@ -58,6 +59,10 @@ a:hover {
 .button.new {
     display: inline-block;
     margin-bottom: .8rem;
+}
+
+button {
+    width: 100%;
 }
 
 /* Header ==================================== */
@@ -108,7 +113,7 @@ header {
 }
 
 .card.total {
-    background: #49AA26;
+    background: var(--green);
     color: white;
 }
 /* Table ==================================== */
@@ -223,6 +228,17 @@ input {
 
 .input-group small {
     opacity: 0.4;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group.actions button,
+.input-group.actions button {
+    width: 48%;
 }
 
 /* Footer ==================================== */
