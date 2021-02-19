@@ -1,8 +1,10 @@
-:root{
+/* Global ===================== */
+:root {
     --dark-blue: #363f5f;
-    --green: #49aa26;
+    --green: #49AA26;
     --light-green: #3dd705;
     --red: #e92929;
+
 }
 
 * {
@@ -15,10 +17,9 @@ html {
     font-size: 93.75%; /* 15px */
 }
 
-/* Global ==================================== */
 body {
     background: #f0f2f5;
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif
 }
 
 .sr-only {
@@ -34,11 +35,11 @@ body {
 }
 
 .container {
-    width: min(87vw, 800px);
+    width: min(90vw, 800px);
     margin: auto;
 }
 
-/* Titles ==================================== */
+/* Titles ===================== */
 h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
@@ -47,8 +48,7 @@ h2 {
     font-weight: normal;
 }
 
-/* Links e Buttons =========================== */
-
+/* Links & Buttons ===================== */
 a {
     color: var(--green);
     text-decoration: none;
@@ -66,10 +66,9 @@ button {
 
     color: white;
     background: var(--green);
-    
-    font-size: 1rem;
 
     padding: 0;
+
     border-radius: 0.25rem;
 
     cursor: pointer;
@@ -98,7 +97,11 @@ button:hover {
     opacity: 0.6;
 }
 
-/* Header ==================================== */
+.button.cancel:hover {
+    opacity: 1;
+}
+
+/* Header ===================== */
 header {
     background: #2D4A22;
     padding: 2rem 0 10rem;
@@ -110,20 +113,22 @@ header {
     font-weight: 100;
 }
 
-/* Balance ==================================== */
+/* Balance ===================== */
 #balance {
     margin-top: -8rem;
 }
 
 #balance h2 {
-    color: white;
-    margin-top: 0;
+    color:white;
+    margin-top:0;
 }
-/* Cards ==================================== */
+
+/* Cards ===================== */
 .card {
     background: white;
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
+
     margin-bottom: 2rem;
 
     color: var(--dark-blue);
@@ -149,29 +154,28 @@ header {
     background: var(--green);
     color: white;
 }
-/* Table ==================================== */
+
+/* Table ===================== */
 #transaction {
     display: block;
     width: 100%;
-    overflow-x: auto;
+    overflow-x: auto; /* para no mobile poder arrastar para o lado até o fim da tabela */
 }
-
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
     color: #969cb3;
-
-    overflow-x: auto; /* para no mobile poder arrastar para o lado até o fim da tabela */
 }
 
-table thead tr th:first-child,
-table tbody tr td:first-child {
+table thead tr th:first-child, 
+table tbody tr td:first-child
+{
     border-radius: 0.25rem 0 0 0.25rem;
 }
 
-table thead tr th:last-child,
-table tbody tr td:last-child {
-    border-radius:  0 0.25rem 0.25rem 0;
+table thead tr th:last-child, 
+table tbody tr td:last-child{
+    border-radius: 0 0.25rem 0.25rem 0;
 }
 
 table thead th {
@@ -184,15 +188,15 @@ table thead th {
 }
 
 table tbody tr {
-    opacity: 0.7;
+    opacity: 0.7
 }
 
 table tbody tr:hover {
-    opacity: 1;
+    opacity: 1
 }
 
 table tbody td {
-    background: white;
+    background:white;
     padding: 1rem 2rem;
 }
 
@@ -208,23 +212,24 @@ td.expense {
     color: #e92929;
 }
 
-/* Modal ===================================== */
-
+/* Modal ===================== */
 .modal-overlay {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0,0,0,0.7);
 
     position: fixed;
     top: 0;
 
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
 
     opacity: 0;
     visibility: hidden;
+
+    z-index: 999;
 }
 
 .modal-overlay.active {
@@ -233,11 +238,15 @@ td.expense {
 }
 
 .modal {
-    background: #f0f2f5;
+    background: #F0F2f5;
     padding: 2.4rem;
+
+    position: relative;
+    z-index: 1;
 }
 
-/* Form ====================================== */
+
+/* Form ===================== */
 #form {
     max-width: 500px;
 }
@@ -259,7 +268,7 @@ input {
     margin-top: 0.8rem;
 }
 
-.input-group small {
+.input-group .help{
     opacity: 0.4;
 }
 
@@ -269,12 +278,13 @@ input {
     align-items: center;
 }
 
-.input-group.actions button,
+.input-group.actions .button,
 .input-group.actions button {
     width: 48%;
 }
 
-/* Footer ==================================== */
+
+/* Footer ===================== */
 footer {
     text-align: center;
     padding: 4rem 0 2rem;
@@ -283,8 +293,8 @@ footer {
     opacity: 0.6;
 }
 
-/* Responsive ================================ */
 
+/* Responsive ===================== */
 @media (min-width: 800px) {
     html {
         font-size: 87.5%;
